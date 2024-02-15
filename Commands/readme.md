@@ -1,8 +1,17 @@
 # Commands to set up the project
 
-## Express
+## 👉 Express
 
 **Install:**
 
 ```bash
 npm install express
+```
+
+## 👉 ejs
+
+**Install:**
+
+```bash
+npm install ejs
+```

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Intro to EJS</h1>
+        <p>My first EJS template</p>
+        <ul>
+            <% for (let i = 0; i < 5; i++) { %>
+                <li><%= i %></li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- <%= i %> is used to print the value of i -->
+<!-- <% %> is used to write JavaScript code -->
+<!-- <%= %> is used to write JavaScript code and print the value -->
+
+<!-- Output:
+comments in the output are also visible
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Intro to EJS</h1>
+      <p>My first EJS template</p>
+      <ul>
+
+        <li>0</li>
+
+        <li>1</li>
+
+        <li>2</li>
+
+        <li>3</li>
+
+        <li>4</li>
+
+      </ul>
+    </div>
+  </body>
+</html>
+-->
