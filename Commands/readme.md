@@ -15,3 +15,11 @@ npm install express
 ```bash
 npm install ejs
 ```
+
+## 👉 Cookie-Parser
+
+**Install:**
+
+```bash
+npm install cookie-parser
+```
