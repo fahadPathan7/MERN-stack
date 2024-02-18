@@ -7,10 +7,11 @@
 - [Route](#route)
 - [ejs Intro](#ejs-intro)
 - [Cookie Parser](#cookie-parser)
+- [Middleware](#middleware)
 
 ---
 
-#### <a name="basic">👉 Basic</a>
+#### <a name="basic"></a> 👉 Basic
 [Code](/Express/1.basic.js) <br>
 In this section, I delve into the fundamentals of express.js.
 
@@ -40,8 +41,14 @@ To learn how ejs works.
 
 ---
 
-#### <a name="cookie-parser">👉 Cookie Parser</a>
+#### <a name="cookie-parser"></a> 👉 Cookie Parser
 [Code](/Express/6.cookieParser.js) <br>
 To learn how to handle cookies.
+
+---
+
+#### <a name="middleware"></a> 👉 Middleware
+[Code](/Express/7.middleware.js) <br>
+To learn how middlewares works (also error handling middlewares).
 
 ---
