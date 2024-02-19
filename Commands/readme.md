@@ -23,3 +23,11 @@ npm install ejs
 ```bash
 npm install cookie-parser
 ```
+
+## 👉 Mongoose
+
+**Install:**
+
+```bash
+npm install mongoose
+```

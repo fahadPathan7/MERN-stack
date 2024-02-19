@@ -1,0 +1,37 @@
+/*
+*/
+
+const express = require('express');
+const mongoose = require('mongoose');
+
+const todoHandler = require('./routeHandler/todoHandler');
+
+const app = express();
+app.use(express.json());
+
+// database connection
+mongoose.connect('mongodb+srv://fahadpathan56:fahadpathan@cluster0.oxoqi6z.mongodb.net/todomanager?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log('database connected');
+}).catch((error) => {
+    console.log('error: ', error);
+});
+
+// routes
+app.use('/todo', todoHandler);
+
+// default error handling middleware
+function errorHandler(err, req, res, next) {
+    if (res.headersSent) {
+        return next(err); // pass the error to the next
+        // error handling middleware
+    }
+    res.status(500).json({ error: err.message });
+    // 500 Internal Server Error
+}
+
+app.listen(5000, () => {
+    console.log('server is listening on port 5000...');
+});
