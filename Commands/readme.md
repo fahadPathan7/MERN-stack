@@ -31,3 +31,27 @@ npm install cookie-parser
 ```bash
 npm install mongoose
 ```
+
+## 👉 bcrypt
+
+**Install:**
+
+```bash
+npm install bcrypt
+```
+
+## 👉 JWT
+
+**Install:**
+
+```bash
+npm install jsonwebtoken
+```
+
+## 👉 env
+
+**Install:**
+
+```bash
+npm install dotenv
+```

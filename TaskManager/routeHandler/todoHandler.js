@@ -1,15 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
+const checkLogin = require("../middlewares/checkLogin");
 
 const todoSchema = require('../models/todoSchema');
 const Todo = new mongoose.model('Todo', todoSchema);
 
 // get all todos
-router.get('/', (req, res) => {
+router.get('/', checkLogin, (req, res) => {
     Todo.find()
     .select({_id: 0, __v: 0})
-    .limit(2)
+    .limit(5)
     .then((result) => {
         res.json(result);
     }).catch((error) => {
@@ -28,13 +29,6 @@ router.get('/:id', (req, res) => {
 
 // create a todo
 router.post('/', (req, res) => {
-    // const newTodo = new Todo(req.body);
-
-    // newTodo.save().then((result) => {
-    //     res.status(201).json(result);
-    // }).catch((error) => {
-    //     res.status(500).json({ error: error });
-    // });
     Todo.create(req.body).then((result) => {
         res.status(201).json(result);
     }).catch((error) => {
