@@ -6,9 +6,13 @@ const checkLogin = require("../middlewares/checkLogin");
 const todoSchema = require('../models/todoSchema');
 const Todo = new mongoose.model('Todo', todoSchema);
 
+const userSchema = require('../models/userSchema');
+const User = new mongoose.model('User', userSchema);
+
 // get all todos
 router.get('/', checkLogin, (req, res) => {
     Todo.find()
+    .populate('user', 'name username -_id')
     .select({_id: 0, __v: 0})
     .limit(5)
     .then((result) => {
@@ -27,9 +31,27 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// update user after creating a todo
+const updateUser = (userId, todoId) => {
+    User.updateOne({ _id: userId }, {
+        $push: {
+            todos: todoId
+        }
+    }).then((result) => {
+        console.log(result);
+    }).catch((error) => {
+        console.log(error);
+    });
+}
+
 // create a todo
-router.post('/', (req, res) => {
-    Todo.create(req.body).then((result) => {
+router.post('/', checkLogin, (req, res) => {
+    Todo.create({
+        ...req.body,
+        user: req.userData.userId
+    }).then((result) => {
+        updateUser(req.userData.userId, result._id);
+
         res.status(201).json(result);
     }).catch((error) => {
         res.status(500).json({ error: error });
