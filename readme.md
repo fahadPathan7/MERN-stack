@@ -7,3 +7,4 @@
 
 **Projects:**
 - [Todo Application](./TaskManager/)
+- [Chat Application](./chatApp/)

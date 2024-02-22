@@ -1,9 +1,7 @@
 
 // login page
 function loginController(req, res) {
-    res.render('index', {
-        title: 'Login - Chat Application',
-    });
+    res.render('index');
 }
 
 module.exports = {

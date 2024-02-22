@@ -6,6 +6,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 
 // internal imports
+const loginRouter = require('./router/loginRouter');
+const usersRouter = require('./router/usersRouter');
+const inboxRouter = require('./router/inboxRouter');
 const { notFoundHandler, errorHandler } = require('./middlewares/common/errorHandler');
 
 const app = express();
