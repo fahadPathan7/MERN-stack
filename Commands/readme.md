@@ -1,6 +1,6 @@
 # Commands to set up the project
 
-## 👉 Express
+### 👉 Express
 
 **Install:**
 
@@ -8,7 +8,7 @@
 npm install express
 ```
 
-## 👉 ejs
+### 👉 ejs
 
 **Install:**
 
@@ -16,7 +16,7 @@ npm install express
 npm install ejs
 ```
 
-## 👉 Cookie-Parser
+### 👉 Cookie-Parser
 
 **Install:**
 
@@ -24,7 +24,7 @@ npm install ejs
 npm install cookie-parser
 ```
 
-## 👉 Mongoose
+### 👉 Mongoose
 
 **Install:**
 
@@ -32,7 +32,7 @@ npm install cookie-parser
 npm install mongoose
 ```
 
-## 👉 bcrypt
+### 👉 bcrypt
 
 **Install:**
 
@@ -40,7 +40,7 @@ npm install mongoose
 npm install bcrypt
 ```
 
-## 👉 JWT
+### 👉 JWT
 
 **Install:**
 
@@ -48,7 +48,7 @@ npm install bcrypt
 npm install jsonwebtoken
 ```
 
-## 👉 env
+### 👉 env
 
 **Install:**
 
@@ -56,7 +56,7 @@ npm install jsonwebtoken
 npm install dotenv
 ```
 
-## 👉 cross-env
+### 👉 cross-env
 
 **Install:**
 
@@ -75,7 +75,7 @@ npm install --save-dev cross-env
 
 In the package.json, it should be like this.
 
-## 👉 nodemon
+### 👉 nodemon
 
 **Install:**
 
@@ -91,10 +91,26 @@ npm start
 
 need to have the scripts in the package.json file.
 
-## 👉 http-errors
+### 👉 http-errors
 
 **Install:**
 
 ```bash
 npm install http-errors
+```
+
+### 👉 Multer
+
+**Install:**
+
+```bash
+npm install multer
+```
+
+### 👉 express-validator
+
+**Install:**
+
+```bash
+npm install express-validator
 ```
