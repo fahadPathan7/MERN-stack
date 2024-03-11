@@ -16,7 +16,7 @@ const app = express();
 dotenv.config();
 
 // database connection
-mongoose.connect('mongodb+srv://' + process.env.USER + ':' + process.env.PASSWORD + '@cluster0.oxoqi6z.mongodb.net/todomanager?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://' + process.env.USER + ':' + process.env.PASSWORD + '@cluster0.oxoqi6z.mongodb.net/' + process.env.APP_Name + '?retryWrites=true&w=majority')
 .then(() => {
     console.log('database connected.');
 }).catch((error) => {
