@@ -114,14 +114,3 @@ npm install multer
 ```bash
 npm install express-validator
 ```
-
-
-# Commands to setup react project
-
-### Vite
-
-**Install:**
-
-```bash
-npm init @vitejs/app my-react-app --template react
-```
