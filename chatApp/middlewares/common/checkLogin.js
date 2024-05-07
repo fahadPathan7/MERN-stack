@@ -1,3 +1,5 @@
+// external imports
+const createError = require("http-errors");
 const jwt = require("jsonwebtoken");
 
 const checkLogin = (req, res, next) => {
@@ -6,9 +8,9 @@ const checkLogin = (req, res, next) => {
 
   if (cookies) {
     try {
-      token = cookies[process.env.COOKIE_NAME];
+      var token = cookies[process.env.COOKIE_NAME];
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      req.user = decoded;
+      req.user = decoded; // this is to pass user info to next middleware
 
       // pass user info to response locals
       if (res.locals.html) {

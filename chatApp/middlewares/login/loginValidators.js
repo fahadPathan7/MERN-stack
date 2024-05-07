@@ -1,5 +1,6 @@
 // exteranl imports
 const { check } = require('express-validator');
+const { validationResult } = require('express-validator');
 
 const doLoginValidators = [
     check('username').notEmpty().withMessage('Username can not be empty'),

@@ -51,7 +51,7 @@ const addUserValidationsHandler = (req, res, next) => {
         res.status(500).json({
             errors: mappedErrors,
         });
-    };
+    }
 }
 
 module.exports = {
