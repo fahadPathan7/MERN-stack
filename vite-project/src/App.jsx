@@ -4,13 +4,13 @@
 import React from 'react';
 
 // internal import
-import EventBinding from './components/EventBinding/EventBinding';
+import Hooks from './components/Hooks/Hooks';
 
 function App() {
 
   return (
     <div>
-      <EventBinding />
+      <Hooks />
     </div>
   );
 }
