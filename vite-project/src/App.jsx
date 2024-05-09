@@ -4,13 +4,21 @@
 import React from 'react';
 
 // internal import
-import Form from './components/Form/Form';
+import StateLifting from './components/StateLifting/StateLifting';
 
 function App() {
+  const [childData, setChildData] = React.useState(null);
+
+  const handleChildData = (data) => {
+    console.log(data);
+    setChildData(data);
+  };
 
   return (
     <div>
-      <Form />
+      <h1>App Component</h1>
+      <StateLifting onChildData={handleChildData} />
+      <h2>{childData}</h2>
     </div>
   );
 }
