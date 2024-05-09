@@ -4,13 +4,13 @@
 import React from 'react';
 
 // internal import
-import Bubbling from './components/Bubbling/Bubbling';
+import Form from './components/Form/Form';
 
 function App() {
 
   return (
     <div>
-      <Bubbling />
+      <Form />
     </div>
   );
 }
