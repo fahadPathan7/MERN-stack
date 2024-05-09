@@ -8,6 +8,7 @@ import List from './components/UniqueList/List';
 import NestedList from './components/NestedMapping/Nested';
 import ClassComp from './components/ClassComponent/ClassComp';
 import State from './components/State/State';
+import Pages from './components/ConditionalRendering/Pages';
 
 // app name
 const appName = "Todo App";
@@ -16,8 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="headingStyle">{appName}</h1>
-      <State />
+      <Pages />
     </div>
   );
 }
