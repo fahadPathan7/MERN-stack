@@ -7,6 +7,7 @@ import React from 'react';
 import List from './components/UniqueList/List';
 import NestedList from './components/NestedMapping/Nested';
 import ClassComp from './components/ClassComponent/ClassComp';
+import State from './components/State/State';
 
 // app name
 const appName = "Todo App";
@@ -16,7 +17,7 @@ function App() {
   return (
     <div>
       <h1 className="headingStyle">{appName}</h1>
-      <ClassComp name="card" desc="this is card." />
+      <State />
     </div>
   );
 }
