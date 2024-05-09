@@ -4,21 +4,13 @@
 import React from 'react';
 
 // internal import
-import List from './components/UniqueList/List';
-import NestedList from './components/NestedMapping/Nested';
-import ClassComp from './components/ClassComponent/ClassComp';
-import State from './components/State/State';
-import Pages from './components/ConditionalRendering/Pages';
-import EventHandlerClass from './components/EventHandlerClass/EventHandlerClass';
-
-// app name
-const appName = "Todo App";
+import EventBinding from './components/EventBinding/EventBinding';
 
 function App() {
 
   return (
     <div>
-      <EventHandlerClass />
+      <EventBinding />
     </div>
   );
 }
