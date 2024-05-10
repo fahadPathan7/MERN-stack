@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import Component1 from './components/UseContext/Component1';
+import Apps from '../pages/Apps';
 
 function App() {
   return (
     <div>
-      <Component1 />
+      <Apps />
     </div>
   );
 }

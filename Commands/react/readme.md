@@ -41,3 +41,10 @@ This is to validate form in react project.
 npm install react-toastify
 ```
 This is to show toast message in react project.
+
+### 👉 react-router-dom
+**Install:**
+```bash
+npm install react-router-dom
+```
+This is to use routing in react project.
