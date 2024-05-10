@@ -34,3 +34,10 @@ This is to use form in react project.
 npm install yup
 ```
 This is to validate form in react project.
+
+### 👉 react-toastify
+**Install:**
+```bash
+npm install react-toastify
+```
+This is to show toast message in react project.
