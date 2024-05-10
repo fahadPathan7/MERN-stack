@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import Toastify from './components/Toastify/Toastify';
+import UseRef from './components/UseRef/UseRef';
 
 function App() {
   return (
     <div>
-      <Toastify />
+      <UseRef />
     </div>
   );
 }
