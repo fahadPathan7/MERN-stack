@@ -34,3 +34,25 @@
 .cardFooter {
     text-align: center;;
 }
+
+nav {
+    background-color: purple;
+    padding: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+nav .active {
+    color: red;
+}
