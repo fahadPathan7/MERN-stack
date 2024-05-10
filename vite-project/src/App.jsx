@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import Toggle from './components/Toggle/Toggle';
+import UseEffect from './components/UseEffect/UseEffect';
 
 function App() {
   return (
     <div>
-      <Toggle />
+      <UseEffect />
     </div>
   );
 }
