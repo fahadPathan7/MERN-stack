@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import Formik from './components/Formik/Formik';
+import Toggle from './components/Toggle/Toggle';
 
 function App() {
   return (
     <div>
-      <Formik />
+      <Toggle />
     </div>
   );
 }
