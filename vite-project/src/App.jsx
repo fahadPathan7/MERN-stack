@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import UseRef from './components/UseRef/UseRef';
+import UseReducer from './components/UseReducer/UseReducer';
 
 function App() {
   return (
     <div>
-      <UseRef />
+      <UseReducer />
     </div>
   );
 }
