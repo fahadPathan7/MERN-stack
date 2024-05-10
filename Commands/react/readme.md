@@ -27,3 +27,10 @@ website: [react-icons](https://react-icons.github.io/react-icons/)
 npm install formik
 ```
 This is to use form in react project.
+
+### 👉 Yup
+**Install:**
+```bash
+npm install yup
+```
+This is to validate form in react project.
