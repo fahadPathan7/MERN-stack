@@ -19,3 +19,11 @@ This is to generate unique id for each component.
 npm install react-icons
 ```
 This is to use icons in react project.
+website: [react-icons](https://react-icons.github.io/react-icons/)
+
+### 👉 Formik
+**Install:**
+```bash
+npm install formik
+```
+This is to use form in react project.

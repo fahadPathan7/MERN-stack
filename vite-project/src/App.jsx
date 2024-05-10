@@ -4,21 +4,12 @@
 import React from 'react';
 
 // internal import
-import StateLifting from './components/StateLifting/StateLifting';
+import Formik from './components/Formik/Formik';
 
 function App() {
-  const [childData, setChildData] = React.useState(null);
-
-  const handleChildData = (data) => {
-    console.log(data);
-    setChildData(data);
-  };
-
   return (
     <div>
-      <h1>App Component</h1>
-      <StateLifting onChildData={handleChildData} />
-      <h2>{childData}</h2>
+      <Formik />
     </div>
   );
 }
