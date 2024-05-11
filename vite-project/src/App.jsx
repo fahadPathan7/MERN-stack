@@ -4,14 +4,12 @@
 import React from 'react';
 
 // internal import
-import Router from './components/ProtectedRouting/Router';
-import Toastify from './components/Toastify/Toastify';
-import Apps from '../pages/Apps';
+import JsonServer from './components/JsonServer/JsonServer';
 
 function App() {
   return (
     <div>
-      <Router />
+      <JsonServer />
     </div>
   );
 }

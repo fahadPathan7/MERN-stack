@@ -48,3 +48,24 @@ This is to show toast message in react project.
 npm install react-router-dom
 ```
 This is to use routing in react project.
+
+### 👉 json-server
+**Install:**
+```bash
+npm install json-server
+```
+This is to create fake api for testing.
+
+**Run:**
+```bash
+npx json-server --watch data/db.json --port 8000
+```
+This is to run json server on port 8000.
+db.json is the file where we can write our data.
+
+### 👉 axios
+**Install:**
+```bash
+npm install axios
+```
+This is to make api request in react project.
