@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import JsonServer from './components/JsonServer/JsonServer';
+import Router from './components/ProtectedRouting/Router';
 
 function App() {
   return (
     <div>
-      <JsonServer />
+      <Router />
     </div>
   );
 }

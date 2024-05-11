@@ -69,3 +69,10 @@ db.json is the file where we can write our data.
 npm install axios
 ```
 This is to make api request in react project.
+
+### 👉 Helmet
+**Install:**
+```bash
+npm install react-helmet
+```
+This is to change title of the page.
