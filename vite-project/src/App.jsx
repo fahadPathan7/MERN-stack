@@ -4,12 +4,14 @@
 import React from 'react';
 
 // internal import
+import Router from './components/ProtectedRouting/Router';
+import Toastify from './components/Toastify/Toastify';
 import Apps from '../pages/Apps';
 
 function App() {
   return (
     <div>
-      <Apps />
+      <Router />
     </div>
   );
 }
