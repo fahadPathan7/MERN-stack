@@ -18,7 +18,7 @@ const Router = () => {
   return (
     <BrowserRouter>
     <Navbar />
-    
+
     {/* Button to toggle login status (just for concept) */}
     <button onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? 'Logout' : 'Login'}</button>
 

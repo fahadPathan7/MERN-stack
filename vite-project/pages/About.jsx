@@ -1,8 +1,18 @@
 import React from 'react'
 
+import { useSearchParams } from 'react-router-dom'
 const About = () => {
+
+  const [searchParams, setSearchParams] = useSearchParams()
+
   return (
-    <div>About</div>
+    <div>About
+      <p>
+        {searchParams.get('name')} <br />
+        {searchParams.get('email')} <br />
+      </p>
+    </div>
+
   )
 }
 
