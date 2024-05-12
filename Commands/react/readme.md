@@ -76,3 +76,24 @@ This is to make api request in react project.
 npm install react-helmet
 ```
 This is to change title of the page.
+
+### 👉 redux
+**Install:**
+```bash
+npm install redux react-redux
+```
+This is to use redux in react project.
+
+### 👉 redux-logger
+**Install:**
+```bash
+npm install redux-logger
+```
+This is to log the redux state. (to see the state in console). works like middleware.
+
+### 👉 redux-thunk
+**Install:**
+```bash
+npm install redux-thunk
+```
+This is to use async action in redux. (to make api request in redux).

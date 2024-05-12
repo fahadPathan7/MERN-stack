@@ -5,7 +5,8 @@
 // store - createStore
 
 import React from 'react';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 
 // constants
 const INCREMENT = 'INCREMENT';
@@ -18,28 +19,28 @@ const initialState = {
     count: 0
 }
 
-// action creators
+// action
 const incrementAction = () => {
     return {
         type: INCREMENT
     }
 }
 
-// action creators
+// action
 const decrementAction = () => {
     return {
         type: DECREMENT
     }
 }
 
-// action creators
+// action
 const resetAction = () => {
     return {
         type: RESET
     }
 }
 
-// action creators
+// action 
 const incrementByAction = (value) => {
     return {
         type: INCREMENT_BY,
@@ -76,7 +77,8 @@ const counterReducer = (state = initialState, action) => {
 }
 
 // store
-const store = createStore(counterReducer); // store is used to store the state. without it, we can't store the state
+// benefits of using logger: it will show the state before and after the action and the action type. It will help to debug the code.
+const store = createStore(counterReducer, applyMiddleware(logger)); // store is used to store the state. without it, we can't store the state
 
 // subscribe is used to get the updated state
 store.subscribe(() => {
