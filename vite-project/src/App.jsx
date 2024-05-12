@@ -5,11 +5,13 @@ import React from 'react';
 
 // internal import
 import CounterView from './components/ReduxToolkit/features/counter/CounterView';
+import TodosView from './components/ReduxToolkit/features/todos/TodosView';
 
 function App() {
   return (
     <div>
       <CounterView />
+      <TodosView />
     </div>
   );
 }
