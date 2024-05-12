@@ -4,12 +4,12 @@
 import React from 'react';
 
 // internal import
-import Router from './components/ProtectedRouting/Router';
+import CounterView from './components/ReduxToolkit/features/counter/CounterView';
 
 function App() {
   return (
     <div>
-      <Router />
+      <CounterView />
     </div>
   );
 }

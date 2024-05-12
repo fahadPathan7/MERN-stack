@@ -97,3 +97,10 @@ This is to log the redux state. (to see the state in console). works like middle
 npm install redux-thunk
 ```
 This is to use async action in redux. (to make api request in redux).
+
+### 👉 redux-toolkit
+**Install:**
+```bash
+npm install @reduxjs/toolkit react-redux
+```
+This is to use redux toolkit in react project.
